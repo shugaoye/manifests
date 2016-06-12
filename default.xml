@@ -11,8 +11,10 @@
            sync-j="4" />
 
   <!-- from github port repositories -->
-  <project path="x86emu" name="x86emu" groups="armemu" />
+  <project path="x86emu" name="x86emu" groups="x86emu" />
   <project path="build" name="build" groups="armemu" />
+  <project path="bo" name="bo" groups="armemu" />
+  <project path="armemu" name="armemu" groups="armemu" />
 
   <!-- from original Android repositories -->
 
