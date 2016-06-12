@@ -5,7 +5,8 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="github"
            fetch=".." />
-  <default remote="github"
+  <default revision="master"
+           remote="github"
            sync-c="true"
            sync-j="4" />
 
