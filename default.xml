@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/" />
+  <remote  name="github"
+           fetch="git@github.com" />
+  <default revision="refs/tags/master"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
+  <!-- from github port repositories -->
+  <project path="x86emu" name="x86emu" groups="armemu" />
+  <project path="build" name="build" groups="armemu" />
+
+  <!-- from original Android repositories -->
+
+</manifest>
