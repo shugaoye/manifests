@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
   <remote  name="github"
-           fetch=".." />
+           fetch="." />
   <default revision="master"
            remote="github"
            sync-c="true"
