@@ -24,7 +24,7 @@
   <project path="asp/device/androVM" name="device_androVM" groups="x86emu" />
   <project path="asp/kernel" name="goldfish" groups="x86emu" />
   <project path="asp/fbtest" name="fbtest" groups="x86emu" />
-  <project path="asp/bootable/newinstaller" name="platform_bootable_newinstaller" groups="x86emu" />
+  <project path="asp/bootable/newinstaller" name="platform_bootable_newinstaller" groups="x86emu" revision="marshmallow-x86" />
   <project path="asp/device/generic/goldfish" name="device_generic_goldfish" groups="x86emu" />
   <project path="asp/twrp" name="Team-Win-Recovery-Project" groups="x86emu" />
 
