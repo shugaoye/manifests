@@ -93,6 +93,7 @@
   <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="notdefault,pdk" />
   <project path="device/generic/qemu" name="device/generic/qemu" groups="notdefault" />
+  <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="notdefault,pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
