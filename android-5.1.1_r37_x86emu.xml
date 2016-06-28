@@ -10,14 +10,20 @@
   <remote  name="x86"
            fetch="../android-x86" />
 
+  <remote  name="intel"
+           fetch="../intel" />
+
   <default revision="refs/tags/android-5.1.1_r37"
            remote="aosp"
            sync-j="4" />
 
+  <!-- Houdini from Intel -->
+  <project path="vendor/intel/houdini" name="houdini" remote="intel" revision="Houdini_5.2.2b" />
+
   <!-- Using github -->
   <!-- project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="master" /-->
   <project path="kernel" name="goldfish" remote="github" revision="android-goldfish-3.10" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-5.1.1" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="marshmallow-x86" />
 
   <!-- AOSP -->
