@@ -12,7 +12,6 @@
 
   <default revision="refs/tags/android-6.0.1_r46"
            remote="aosp"
-           sync-c="true"
            sync-j="4" />
 
   <!-- Using github -->
