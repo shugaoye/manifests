@@ -21,7 +21,7 @@
   <project path="vendor/intel/houdini" name="houdini" remote="intel" revision="Houdini_5.2.2b" />
 
   <!-- Using github -->
-  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="master" />
+  <!-- project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="master" /-->
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-5.1.1" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="marshmallow-x86" />
@@ -46,7 +46,7 @@
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
-  <!-- project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" /-->
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" revision="android-n-preview-4" />
   <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
