@@ -26,7 +26,7 @@
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="marshmallow-x86" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" groups="pdk"  revision="refs/heads/cm-13.0" />
+  <!--project path="bootable/recovery" name="android_bootable_recovery" remote="github" groups="pdk"  revision="refs/heads/cm-13.0" /-->
 
   <!-- AOSP -->
   <project path="build" name="platform/build" groups="pdk" >
@@ -35,7 +35,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
-  <!--project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" /-->
+  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
