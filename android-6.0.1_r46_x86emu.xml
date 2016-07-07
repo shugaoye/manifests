@@ -26,8 +26,8 @@
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="marshmallow-x86" />
-  <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6" />
-  <project path="device/generic/twrpx86" name="android_device_emulator_twrpx86" remote="github" groups="pdk"  revision="android-5" />
+  <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
+  <project path="device/generic/twrpx86" name="android_device_emulator_twrpx86" remote="github" groups="pdk"  revision="android-5.0" />
 
   <!-- AOSP -->
   <project path="build" name="platform/build" groups="pdk" >
