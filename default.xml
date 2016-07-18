@@ -28,9 +28,11 @@
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="marshmallow-x86" />
-  <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
+
+  <!-- TWRP, use the below repositories for TWRP build -->
+  <!--project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
   <project path="device/generic/twrpx86" name="android_device_emulator_twrpx86" remote="github" groups="pdk"  revision="android-5.0" />
-  <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" /-->
 
   <!-- AOSP -->
   <project path="build" name="platform/build" groups="pdk" >
@@ -39,7 +41,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
-  <!-- project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" /-->
+  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -198,7 +200,7 @@
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
-  <!-- project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" /-->
+  <project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" />
