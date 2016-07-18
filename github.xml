@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="." />
+  <default revision="master"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
+  <!-- from github port repositories -->
+  <!-- EPGQ -->
+  <project path="epgq/build" name="build" groups="armemu" />
+  <project path="epgq/bo" name="bo" groups="armemu" />
+  <project path="epgq/armemu" name="armemu" groups="armemu" />
+  <project path="epgq/cm_armemu" name="cm_armemu" groups="armemu" />
+  <project path="epgq/u-boot" name="u-boot" groups="armemu" />
+
+  <!-- ASP -->
+  <project path="asp/device/generic/x86emu" name="x86emu" groups="x86emu" />
+  <project path="asp/device/generic/x86vbox" name="x86vbox" groups="x86emu" />
+  <project path="asp/device/androVM" name="device_androVM" groups="x86emu" />
+  <project path="asp/kernel" name="goldfish" groups="x86emu" />
+  <project path="asp/fbtest" name="fbtest" groups="x86emu" />
+  <project path="asp/bootable/newinstaller" name="platform_bootable_newinstaller" groups="x86emu" revision="marshmallow-x86" />
+  <project path="asp/device/generic/goldfish" name="device_generic_goldfish" groups="x86emu" />
+  <project path="asp/twrp" name="Team-Win-Recovery-Project" groups="x86emu" />
+
+  <!-- cuckoo for android -->
+  <project path="c4a/cuckoo" name="cuckoo" groups="c4a" />
+  <project path="c4a/cuckoo-droid" name="cuckoo-droid" groups="c4a" />
+  <project path="c4a/droidbot" name="droidbot" groups="c4a" />
+  <project path="c4a/droidmon" name="droidmon" groups="c4a" />
+  <project path="c4a/python-for-android" name="python-for-android" groups="c4a" />
+  <project path="c4a/cuckooautoinstall" name="cuckooautoinstall" groups="c4a" />
+  <project path="c4a/Widgets" name="Widgets" groups="c4a" />
+  <project path="c4a/Superuser" name="Superuser" groups="c4a" />
+
+  <!-- Tools -->
+  <project path="misc/k-9" name="k-9" groups="misc" />
+  <project path="misc/keepassdroid" name="keepassdroid" groups="misc" />
+  <project path="misc/distribution" name="distribution" groups="misc" />
+  <project path="misc/filemanager" name="filemanager" groups="misc" />
+  <project path="misc/apg" name="apg" groups="misc" />
+
+  <!-- from original Android repositories -->
+
+</manifest>
