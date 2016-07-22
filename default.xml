@@ -13,7 +13,7 @@
   <remote  name="intel"
            fetch="../intel" />
 
-  <default revision="refs/tags/android-6.0.1_r55"
+  <default revision="refs/tags/android-6.0.1_r46"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
@@ -22,17 +22,17 @@
   <project path="vendor/intel/houdini" name="houdini" remote="intel" revision="Houdini_6.1.1a" />
 
   <!-- android-x86 -->
-  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="marshmallow-x86" />
+  <!-- project path="external/busybox" name="platform/external/busybox" remote="x86" revision="marshmallow-x86" /-->
 
   <!-- Github -->
+  <project path="external/busybox" name="android_external_busybox" remote="github" revision="cm-13.0" />
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r46_x86emu_r5_wifi" />
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r46_x86emu_r5_wifi" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="marshmallow-x86" />
-
-  <!-- TWRP, use the below repositories for TWRP build -->
-  <!--project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
+  <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
   <project path="device/generic/twrpx86" name="android_device_emulator_twrpx86" remote="github" groups="pdk"  revision="android-5.0" />
-  <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" /-->
+  <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" />
 
   <!-- AOSP -->
   <project path="build" name="platform/build" groups="pdk" >
@@ -41,7 +41,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+  <!-- project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" /-->
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
@@ -52,8 +52,8 @@
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" revision="refs/tags/android-n-preview-4" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <!-- project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" revision="refs/tags/android-n-preview-4" /-->
   <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
@@ -65,9 +65,6 @@
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/google/atv" name="device/google/atv" groups="device,fugu,broadcom_pdk,generic_fs" />
-  <project path="device/google/dragon" name="device/google/dragon" groups="device,dragon" />
-  <project path="device/google/dragon-kernel" name="device/google/dragon-kernel" groups="device,dragon" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -200,7 +197,7 @@
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" />
+  <!--project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" /-->
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" />
@@ -377,7 +374,6 @@
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
