@@ -22,7 +22,6 @@
   <project path="vendor/intel/houdini" name="houdini" remote="intel" revision="Houdini_6.1.1a" />
 
   <!-- android-x86 -->
-  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="marshmallow-x86" />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="marshmallow-x86" />
 
   <!-- Github -->
