@@ -20,10 +20,11 @@
 
   <!-- android-x86 -->
   <!-- project path="external/busybox" name="platform/external/busybox" remote="x86" revision="marshmallow-x86" /-->
+  <project path="kernel" name="kernel/common" remote="x86" revision="marshmallow-x86" />
 
   <!-- Github/shugaoye -->
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_wifi" />
-  <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
+  <!-- project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" /-->
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_wifi" />
   <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_r10" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="marshmallow-x86" />
