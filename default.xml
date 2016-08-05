@@ -10,7 +10,7 @@
   <remote  name="x86"
            fetch="../android-x86" />
 
-  <default revision="refs/tags/android-6.0.1_r55"
+  <default revision="refs/tags/android-6.0.1_r52"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
