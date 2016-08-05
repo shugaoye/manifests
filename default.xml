@@ -10,16 +10,20 @@
   <remote  name="x86"
            fetch="../android-x86" />
 
-  <default revision="refs/tags/android-6.0.1_r43"
+  <default revision="refs/tags/android-6.0.1_r55"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
+
+  <!-- Github/shugaoye -->
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_wifi" />
+  <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
 
   <!-- from x86 port repositories -->
   <project path="build" name="platform/build" groups="pdk" remote="x86" revision="marshmallow-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" />
+  <!-- project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" /-->
   <project path="art" name="platform/art" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="bionic" name="platform/bionic" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="marshmallow-x86" />
@@ -48,6 +52,7 @@
   <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="marshmallow-x86" />
   <project path="external/ntfs-3g" name="platform/external/ntfs-3g" remote="x86" revision="marshmallow-x86" />
   <project path="external/parted" name="platform/external/parted" remote="x86" revision="marshmallow-x86" />
+  <project path="external/s2tc" name="platform/external/s2tc" remote="x86" revision="marshmallow-x86" />
   <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="marshmallow-x86" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="marshmallow-x86" />
@@ -56,6 +61,7 @@
   <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="marshmallow-x86" />
+  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/intel/libsensors" name="platform/hardware/intel/libsensors" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/libaudio" name="platform/hardware/libaudio" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/libcamera" name="platform/hardware/libcamera" remote="x86" revision="marshmallow-x86" />
@@ -64,8 +70,10 @@
   <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="x86" revision="marshmallow-x86" />
+  <project path="hardware/x86power" name="platform/hardware/x86power" remote="x86" revision="marshmallow-x86" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="x86" revision="marshmallow-x86" />
   <project path="packages/apps/CMFileManager" name="platform/packages/apps/CMFileManager" remote="x86" revision="marshmallow-x86" />
+  <project path="packages/apps/Eleven" name="platform/packages/apps/Eleven" remote="x86" revision="marshmallow-x86" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="pdk-fs" remote="x86" revision="marshmallow-x86" />
   <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="x86" revision="marshmallow-x86" />
   <project path="system/core" name="platform/system/core" groups="pdk" remote="x86" revision="marshmallow-x86" />
@@ -82,10 +90,17 @@
   <project path="developers/docs" name="platform/developers/docs" groups="notdefault" />
   <project path="developers/samples/android" name="platform/developers/samples/android" groups="notdefault" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
+  <project path="device/asus/deb" name="device/asus/deb" groups="notdefault,device,flo" />
+  <project path="device/asus/flo" name="device/asus/flo" groups="notdefault,device,flo" />
+  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="notdefault,device,flo" clone-depth="1" />
+  <project path="device/asus/fugu" name="device/asus/fugu" groups="notdefault,device,fugu,broadcom_pdk" />
+  <project path="device/asus/fugu-kernel" name="device/asus/fugu-kernel" groups="notdefault,device,fugu,broadcom_pdk" clone-depth="1" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
+  <project path="device/lge/bullhead" name="device/lge/bullhead" groups="notdefault,device,bullhead" />
+  <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="notdefault,device,bullhead" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="notdefault,pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="notdefault,pdk" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" />
+  <!-- project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" /-->
   <project path="device/generic/mips" name="device/generic/mips" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="notdefault,pdk" />
@@ -93,6 +108,19 @@
   <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="notdefault,pdk" />
   <project path="device/generic/qemu" name="device/generic/qemu" groups="notdefault" />
+  <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="notdefault,device" />
+  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="notdefault,device" />
+  <project path="device/google/atv" name="device/google/atv" groups="notdefault,device,fugu,broadcom_pdk,generic_fs" />
+  <project path="device/google/dragon" name="device/google/dragon" groups="notdefault,device,dragon" />
+  <project path="device/google/dragon-kernel" name="device/google/dragon-kernel" groups="notdefault,device,dragon" clone-depth="1" />
+  <project path="device/htc/flounder" name="device/htc/flounder" groups="notdefault,device,flounder,broadcom_pdk" />
+  <project path="device/htc/flounder-kernel" name="device/htc/flounder-kernel" groups="notdefault,device,flounder,broadcom_pdk" clone-depth="1" />
+  <project path="device/huawei/angler" name="device/huawei/angler" groups="notdefault,device,angler,broadcom_pdk" />
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="notdefault,device,angler,broadcom_pdk" />
+  <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="notdefault,device,hammerhead,broadcom_pdk,generic_fs" />
+  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="notdefault,device,hammerhead,broadcom_pdk,generic_fs" clone-depth="1" />
+  <project path="device/moto/shamu" name="device/moto/shamu" groups="notdefault,device,shamu,broadcom_pdk" />
+  <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="notdefault,device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="notdefault,pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -334,7 +362,6 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" groups="notdefault" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
   <project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel" />
@@ -391,7 +418,7 @@
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="notdefault,pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" groups="pdk-fs" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" groups="pdk-fs" />
@@ -401,8 +428,8 @@
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" groups="pdk-fs" />
   <project path="packages/apps/Messaging" name="platform/packages/apps/Messaging" groups="pdk-fs" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="pdk-fs" />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="pdk-fs" />
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" groups="notdefault,pdk-fs" />
+  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" groups="notdefault,pdk-fs" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" groups="notdefault,apps_nfc,pdk-fs" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" groups="pdk-fs" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" groups="pdk-fs" />
