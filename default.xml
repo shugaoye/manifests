@@ -21,6 +21,7 @@
   <!-- android-x86 -->
   <!-- project path="external/busybox" name="platform/external/busybox" remote="x86" revision="marshmallow-x86" /-->
   <!-- project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" /-->
+  <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="marshmallow-x86" />
 
   <!-- Github/shugaoye -->
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_wifi" />
