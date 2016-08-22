@@ -7,4 +7,5 @@
 #
 20160822 - Updated the master branch to android-n-preview-5, build for both x86emu and x86vbox with TWRP.
            The default kernel is for x86vbox. To build x86emu, need to checkout the emulator kernel.
+           Use bionic from android-x86 for uvesafb/v86d build. We can move to AOSP bionic, if mesa is used.
 20160725 - Updated master branch to android-6.0.1_r55
