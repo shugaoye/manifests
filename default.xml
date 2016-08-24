@@ -20,7 +20,7 @@
   <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
 
   <!-- from x86 port repositories -->
-  <project path="build" name="platform/build" groups="pdk" remote="x86" revision="marshmallow-x86" >
+  <project path="build" name="build" groups="pdk" remote="x86" revision="marshmallow-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <!-- project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" /-->
