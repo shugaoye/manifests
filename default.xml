@@ -20,10 +20,10 @@
   <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
 
   <!-- from x86 port repositories -->
-  <project path="build" name="build" groups="pdk" remote="x86" revision="marshmallow-x86" >
+  <!-- project path="build" name="build" groups="pdk" remote="x86" revision="marshmallow-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <!-- project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" /-->
+  <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" /-->
   <project path="art" name="art" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="bionic" name="bionic" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="bootable/newinstaller" name="bootable_newinstaller" remote="x86" revision="marshmallow-x86" />
@@ -73,6 +73,9 @@
   <project path="system/vold" name="system_vold" groups="pdk" remote="x86" revision="marshmallow-x86" />
 
   <!-- from original Android repositories -->
+  <project path="build" name="platform/build" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="notdefault,cts,pdk-cw-fs,pdk-fs" />
