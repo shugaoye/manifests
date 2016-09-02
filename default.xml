@@ -72,7 +72,7 @@
   <!--project path="packages/services/Analytics" name="packages_services_Analytics" remote="x86" revision="marshmallow-x86" /-->
   <project path="system/core" name="system_core" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <!-- project path="system/extras" name="system_extras" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
-  <project path="system/vold" name="system_vold" groups="pdk" remote="x86" revision="marshmallow-x86" />
+  <!-- project path="system/vold" name="system_vold" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
 
   <!-- from original Android repositories -->
   <project path="build" name="platform/build" groups="pdk" >
@@ -513,6 +513,7 @@
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
+  <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
