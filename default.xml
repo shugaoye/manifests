@@ -54,7 +54,7 @@
   <!-- project path="external/toybox" name="external_toybox" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
   <project path="external/v86d" name="external_v86d" remote="x86" revision="marshmallow-x86" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="x86" revision="marshmallow-x86" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="x86" revision="marshmallow-x86" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="x86" revision="android-x86-6.0.1_vbox" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/broadcom/wlan" name="hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/gps" name="hardware_gps" remote="x86" revision="marshmallow-x86" />
