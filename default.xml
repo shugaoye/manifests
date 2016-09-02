@@ -18,15 +18,17 @@
   <!-- Github/shugaoye -->
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_wifi" />
   <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_x86vbox_gpu" />
 
   <!-- from x86 port repositories -->
+  
   <!-- project path="build" name="build" groups="pdk" remote="x86" revision="marshmallow-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" /-->
-  <project path="art" name="art" groups="pdk" remote="x86" revision="marshmallow-x86" />
+  <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" />
+  <project path="art" name="art" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
   <project path="bionic" name="bionic" groups="pdk" remote="x86" revision="marshmallow-x86" />
-  <project path="bootable/newinstaller" name="bootable_newinstaller" remote="x86" revision="marshmallow-x86" />
+  <!-- project path="bootable/newinstaller" name="bootable_newinstaller" remote="x86" revision="marshmallow-x86" /-->
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="x86" revision="android-x86-6.0.1_vbox" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="x86" revision="marshmallow-x86" />
   <project path="device/generic/x86" name="device_generic_x86" groups="pdk" remote="x86" revision="marshmallow-x86" />
@@ -77,6 +79,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
+  <project path="art" name="platform/art" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="notdefault,cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
