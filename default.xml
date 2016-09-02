@@ -71,7 +71,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="x86" revision="marshmallow-x86" />
   <project path="packages/services/Analytics" name="packages_services_Analytics" remote="x86" revision="marshmallow-x86" />
   <project path="system/core" name="system_core" groups="pdk" remote="x86" revision="marshmallow-x86" />
-  <project path="system/extras" name="system_extras" groups="pdk" remote="x86" revision="marshmallow-x86" />
+  <!-- project path="system/extras" name="system_extras" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
   <project path="system/vold" name="system_vold" groups="pdk" remote="x86" revision="marshmallow-x86" />
 
   <!-- from original Android repositories -->
@@ -507,6 +507,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/bt" name="platform/system/bt" groups="notdefault,pdk" />
+  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
