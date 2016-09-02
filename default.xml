@@ -18,17 +18,12 @@
   <!-- Github/shugaoye -->
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_wifi" />
   <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_x86vbox_gpu" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-x86-6.0.1_vbox" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-x86-6.0.1_vbox" />
 
   <!-- from x86 port repositories -->
   
-  <!-- project path="build" name="build" groups="pdk" remote="x86" revision="marshmallow-x86" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.4" />
-  <project path="art" name="art" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
   <project path="bionic" name="bionic" groups="pdk" remote="x86" revision="marshmallow-x86" />
-  <!-- project path="bootable/newinstaller" name="bootable_newinstaller" remote="x86" revision="marshmallow-x86" /-->
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="x86" revision="android-x86-6.0.1_vbox" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="x86" revision="marshmallow-x86" />
   <project path="device/generic/x86" name="device_generic_x86" groups="pdk" remote="x86" revision="android-x86-6.0.1_vbox" />
@@ -43,7 +38,6 @@
   <project path="external/drm_hwcomposer" name="external_drm_hwcomposer" groups="drm_hwcomposer" remote="x86" revision="marshmallow-x86" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="external/ffmpeg" name="external_ffmpeg" remote="x86" revision="marshmallow-x86" />
-  <!-- project path="external/googleanalytics" name="external_googleanalytics" remote="x86" revision="marshmallow-x86" /-->
   <project path="external/libdrm" name="external_libdrm" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="external/libpciaccess" name="external_libpciaccess" remote="x86" revision="marshmallow-x86" />
   <project path="external/libtruezip" name="external_libtruezip" remote="x86" revision="marshmallow-x86" />
@@ -51,7 +45,6 @@
   <project path="external/mesa" name="external_mesa" remote="x86" revision="marshmallow-x86" />
   <project path="external/s2tc" name="external_s2tc" remote="x86" revision="marshmallow-x86" />
   <project path="external/stagefright-plugins" name="external_stagefright-plugins" remote="x86" revision="marshmallow-x86" />
-  <!-- project path="external/toybox" name="external_toybox" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
   <project path="external/v86d" name="external_v86d" remote="x86" revision="marshmallow-x86" />
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="x86" revision="android-x86-6.0.1_vbox" />
@@ -68,11 +61,7 @@
   <project path="hardware/libsensors" name="hardware_libsensors" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="x86" revision="marshmallow-x86" />
   <project path="hardware/x86power" name="hardware_x86power" remote="x86" revision="marshmallow-x86" />
-  <!--project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="x86" revision="marshmallow-x86" /-->
-  <!--project path="packages/services/Analytics" name="packages_services_Analytics" remote="x86" revision="marshmallow-x86" /-->
   <project path="system/core" name="system_core" groups="pdk" remote="x86" revision="marshmallow-x86" />
-  <!-- project path="system/extras" name="system_extras" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
-  <!-- project path="system/vold" name="system_vold" groups="pdk" remote="x86" revision="marshmallow-x86" /-->
 
   <!-- from original Android repositories -->
   <project path="build" name="platform/build" groups="pdk" >
