@@ -16,7 +16,7 @@
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_wifi" />
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_alpha" />
-  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-x86-6.0.1_vbox" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_beta" />
 
   <!-- TWRP, use the below repositories for TWRP build -->
   <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
