@@ -22,8 +22,6 @@
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-x86-6.0.1_vbox" />
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-x86-6.0.1_vbox" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="github" revision="marshmallow-x86" />
-  <project path="device/generic/x86" name="device_generic_x86" groups="pdk" remote="github" revision="android-x86-6.0.1_vbox" />
-  <project path="device/generic/x86_64" name="device_generic_x86_64" groups="pdk" remote="github" revision="marshmallow-x86" />
   <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="github" revision="marshmallow-x86" />
   <project path="external/alsa-utils" name="platform_external_alsa-utils" remote="github" revision="marshmallow-x86" />
   <project path="external/bluetooth/bluez" name="platform_external_bluetooth_bluez" remote="github" revision="marshmallow-x86" />
