@@ -12,9 +12,10 @@
            sync-j="4" />
 
   <!-- github/shugaoye -->
-  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch04" />
+  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch05" />
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch05" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch05" />
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch04" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk" >
@@ -41,7 +42,7 @@
   <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="device,bullhead" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <!--project path="device/generic/common" name="device/generic/common" groups="pdk" /-->
   <!--project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" /-->
   <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
