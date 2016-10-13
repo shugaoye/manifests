@@ -14,7 +14,7 @@
 
   <!-- github/shugaoye -->
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch05" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch05" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch06" />
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
 
   <!-- android-x86 -->
