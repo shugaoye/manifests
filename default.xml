@@ -13,13 +13,13 @@
            sync-j="4" />
 
   <!-- github/shugaoye -->
-  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch06" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch06" />
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch04" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch07" />
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
 
   <!-- android-x86 -->
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github" revision="marshmallow-x86" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch06" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch07" />
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch05" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="github" revision="marshmallow-x86" />
   <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="github" revision="marshmallow-x86" />
