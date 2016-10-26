@@ -13,7 +13,7 @@
            sync-j="4" />
 
   <!-- github/shugaoye -->
-  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch04" />
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch07" />
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch07" />
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
 
@@ -50,7 +50,7 @@
   <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="github" revision="marshmallow-x86" />
   <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="github" revision="marshmallow-x86" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github" revision="marshmallow-x86" />
-  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="github" revision="marshmallow-x86" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="github" revision="android-6.0.1_r61_ch07" />
   <project path="hardware/liblights" name="platform_hardware_liblights" remote="github" revision="marshmallow-x86" />
   <project path="hardware/libsensors" name="platform_hardware_libsensors" remote="github" revision="marshmallow-x86" />
   <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="github" revision="marshmallow-x86" />
