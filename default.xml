@@ -2,10 +2,9 @@
 <manifest>
 
   <remote  name="github"
-           fetch="." />
+           fetch=".." />
   <default revision="master"
            remote="github"
-           sync-c="true"
            sync-j="4" />
 
   <!-- from github port repositories -->
