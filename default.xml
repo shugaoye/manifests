@@ -13,7 +13,6 @@
            sync-j="4" />
 
   <!-- github/shugaoye -->
-  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_wifi" />
   <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
   <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_beta" />
 
@@ -77,7 +76,7 @@
   <project path="developers/docs" name="platform/developers/docs" groups="notdefault" />
   <project path="developers/samples/android" name="platform/developers/samples/android" groups="notdefault" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
-  <project path="device/asus/deb" name="device/asus/deb" groups="notdefault,device,flo" />
+  <!--project path="device/asus/deb" name="device/asus/deb" groups="notdefault,device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="notdefault,device,flo" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="notdefault,device,flo" clone-depth="1" />
   <project path="device/asus/fugu" name="device/asus/fugu" groups="notdefault,device,fugu,broadcom_pdk" />
@@ -86,9 +85,9 @@
   <project path="device/lge/bullhead" name="device/lge/bullhead" groups="notdefault,device,bullhead" />
   <project path="device/lge/bullhead-kernel" name="device/lge/bullhead-kernel" groups="notdefault,device,bullhead" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="notdefault,pdk" />
-  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="notdefault,pdk" />
-  <!-- project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" /-->
-  <project path="device/generic/mips" name="device/generic/mips" groups="notdefault,pdk" />
+  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="notdefault,pdk" /-->
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" />
+  <!--project path="device/generic/mips" name="device/generic/mips" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="notdefault,pdk" />
   <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="notdefault,pdk" />
@@ -108,7 +107,7 @@
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="notdefault,device,hammerhead,broadcom_pdk,generic_fs" clone-depth="1" />
   <project path="device/moto/shamu" name="device/moto/shamu" groups="notdefault,device,shamu,broadcom_pdk" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="notdefault,device,shamu,broadcom_pdk" clone-depth="1" />
-  <project path="device/sample" name="device/sample" groups="pdk" />
+  <project path="device/sample" name="device/sample" groups="pdk" /-->
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="notdefault,pdk-cw-fs,pdk-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs,pdk-fs" />
