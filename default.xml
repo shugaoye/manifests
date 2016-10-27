@@ -74,6 +74,7 @@
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" groups="notdefault" />
   <project path="developers/demos" name="platform/developers/demos" groups="notdefault" />
+  <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="developers/docs" name="platform/developers/docs" groups="notdefault" />
   <project path="developers/samples/android" name="platform/developers/samples/android" groups="notdefault" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
