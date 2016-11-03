@@ -12,22 +12,19 @@
            sync-c="true"
            sync-j="4" />
 
-  <!-- github/shugaoye -->
-  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch04" />
+  <!-- github -->
   <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
-  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_r61_ch08" />
 
-  <!-- TWRP, use the below repositories for TWRP build >
   <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
   <project path="device/generic/twrpx86" name="android_device_emulator_twrpx86" remote="github" groups="pdk"  revision="android-5.0" />
-  <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" /-->
+  <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" />
 
-  <!-- from android-x86 repositories in Github -->
-  
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github" revision="marshmallow-x86" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch08" />
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch08" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="github" revision="marshmallow-x86" />
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch04" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_beta" />
   <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="github" revision="marshmallow-x86" />
   <project path="external/alsa-utils" name="platform_external_alsa-utils" remote="github" revision="marshmallow-x86" />
   <project path="external/bluetooth/bluez" name="platform_external_bluetooth_bluez" remote="github" revision="marshmallow-x86" />
@@ -63,13 +60,13 @@
   <project path="hardware/x86power" name="platform_hardware_x86power" remote="github" revision="marshmallow-x86" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github" revision="marshmallow-x86" />
 
-  <!-- from original Android repositories -->
+  <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+  <!-- project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" /-->
   <project path="cts" name="platform/cts" groups="notdefault,cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" groups="notdefault" />
@@ -205,7 +202,7 @@
   <project path="external/lld" name="platform/external/lld" groups="pdk-fs" />
   <project path="external/lldb" name="platform/external/lldb" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" />
+  <!-- project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" /-->
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" />
