@@ -3,5 +3,6 @@
 # repo init -u {path of your local mirror} -b android-6.0.1_r61_ch12
 
 History:
+20161202 - Updated device/generic/x86vbox to branch android-6.0.1_r61_ch12
 20161103 - Created for chapter 12.
 

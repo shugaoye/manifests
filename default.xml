@@ -24,7 +24,7 @@
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch08" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="github" revision="marshmallow-x86" />
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch04" />
-  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_beta_twrp" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_r61_ch12" />
   <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="github" revision="marshmallow-x86" />
   <project path="external/alsa-utils" name="platform_external_alsa-utils" remote="github" revision="marshmallow-x86" />
   <project path="external/bluetooth/bluez" name="platform_external_bluetooth_bluez" remote="github" revision="marshmallow-x86" />
