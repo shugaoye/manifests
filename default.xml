@@ -20,7 +20,7 @@
   <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" />
 
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github" revision="marshmallow-x86" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch08" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch12" />
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch08" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="github" revision="marshmallow-x86" />
   <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-6.0.1_r61_ch04" />
