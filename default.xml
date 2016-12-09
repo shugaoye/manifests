@@ -15,7 +15,7 @@
   <!-- github -->
   <project path="kernel" name="goldfish" remote="github" revision="android-6.0.1_x86vbox" />
 
-  <project path="bootable/recovery" name="Team-Win-Recovery-Project" remote="github" groups="pdk"  revision="android-6.0" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" groups="pdk"  revision="android-6.0" />
   <project path="device/generic/twrpx86" name="android_device_emulator_twrpx86" remote="github" groups="pdk"  revision="android-5.0" />
   <project path="external/lz4" name="android_external_lz4" remote="github" revision="android-6.0" groups="pdk-cw-fs,pdk-fs" />
 
