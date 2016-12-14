@@ -13,7 +13,7 @@
 
   <!-- github/shugaoye -->
   <project path="kernel" name="goldfish" remote="github" revision="android-x86emu-3.10" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-6.0.1_r61_ch04" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-7.1.0_r7_ch04" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
