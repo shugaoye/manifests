@@ -12,7 +12,7 @@
            sync-j="4" />
 
   <!-- github/shugaoye -->
-  <project path="kernel" name="goldfish" remote="github" revision="android-goldfish-3.10" />
+  <project path="kernel" name="goldfish" remote="github" revision="android-7.1.0_r7_ch04" />
   <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-7.1.0_r7_ch04" />
 
   <!-- aosp -->
