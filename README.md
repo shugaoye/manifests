@@ -3,8 +3,5 @@
 # repo init -u {path of your local mirror} -b android-6.0.1_r61_ch12
 
 History:
-20161209 - Using TWRP from omnirom project.
-20161205 - Updated bootable/newinstaller
-20161202 - Updated device/generic/x86vbox
-20161103 - Created for chapter 12.
+20161221 - Baselined using tag android-6.0.1_r61_x86vbox_ch12_r1.
 
