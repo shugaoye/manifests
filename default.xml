@@ -12,9 +12,9 @@
            sync-j="4" />
 
   <!-- github/shugaoye -->
-  <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-7.1.0_r7_x86emu_ch04_r1" />
-  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch05" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-7.1.0_r7_ch05" />
+  <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-7.1.0_r7_x86emu_ch05_r1" />
+  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="refs/tags/android-7.1.0_r7_x86emu_ch05_r1" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="refs/tags/android-7.1.0_r7_x86emu_ch05_r1" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
