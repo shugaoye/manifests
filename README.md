@@ -1,12 +1,8 @@
-# android-x86-7.0.0
-# Replace the follow repositories with GitHub version.
-- device/generic/goldfish
-- kernel
+# tag: android-x86-7.1.0_r7
+# branch: nougat-x86
+# Mirror for android-x86
+# Initializing repo using the below command from your local mirror
+# repo init -u {path of your local mirror} -b android-x86-7.1.0_r7
 
-# manifests
-20160829 - Upgraded to nougat-x86
-20160824 - Upgrade to android-6.0.1_r61 and use the new android-x86 manifest.
-- reverted to android-6.0.1_r52
-- Updated to android-6.0.1_r55
-- android-x86-6.0.1_r43
+20170111 - baselined android-x86-7.1.0_r7.
 
