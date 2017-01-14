@@ -13,9 +13,8 @@
 
   <!-- github/shugaoye -->
   <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-7.1.1_r4_x86emu_ch05_r1" />
-  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="refs/tags/android-7.1.1_r4_x86emu_ch05_r1" />
-  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="refs/tags/android-7.1.1_r4_x86emu_ch05_r1" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="refs/tags/android-7.1.1_r4_x86emu_ch05_r1" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-7.1.1_r4_ch06" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch06" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
@@ -42,8 +41,8 @@
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="notdefault,pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="notdefault,pdk" />
-  <!--project path="device/generic/common" name="device/generic/common" groups="notdefault,pdk" />
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" /-->
+  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
   <project path="device/generic/mips" name="device/generic/mips" groups="notdefault,pdk" />
   <project path="device/generic/mips64" name="device/generic/mips64" groups="notdefault,pdk" />
