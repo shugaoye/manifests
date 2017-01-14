@@ -42,8 +42,8 @@
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="notdefault,pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="notdefault,pdk" />
-  <!--project path="device/generic/common" name="device/generic/common" groups="notdefault,pdk" /-->
-  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" />
+  <!--project path="device/generic/common" name="device/generic/common" groups="notdefault,pdk" />
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="notdefault,pdk" /-->
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
   <project path="device/generic/mips" name="device/generic/mips" groups="notdefault,pdk" />
   <project path="device/generic/mips64" name="device/generic/mips64" groups="notdefault,pdk" />
