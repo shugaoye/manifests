@@ -2,6 +2,7 @@
 <manifest>
 
   <remote  name="github"
+           revision="refs/tags/android-7.1.1_r4_x86emu_ch06_r1"
            fetch="." />
 
   <remote  name="aosp"
@@ -12,9 +13,9 @@
            sync-j="1" />
 
   <!-- github/shugaoye -->
-  <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-7.1.1_r4_x86emu_ch05_r1" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-7.1.1_r4_ch06" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch06" />
+  <project path="kernel" name="goldfish" remote="github" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
