@@ -14,8 +14,9 @@
 
   <!-- github/shugaoye -->
   <project path="kernel" name="goldfish" remote="github" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" />
+  <project path="device/generic/x86emu" name="x86emu" remote="github" revision="android-7.1.1_r4_ch07" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-7.1.1_r4_ch07" />
+  <project path="device/generic/goldfish" name="device_generic_goldfish" remote="github" groups="pdk" revision="android-7.1.1_r4_ch07" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
@@ -115,7 +116,8 @@
   <project path="external/dbus-binding-generator" name="platform/external/dbus-binding-generator" />
   <project path="external/deqp" name="platform/external/deqp" groups="pdk-fs" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/dhcpcd-6.8.2" name="platform/external/dhcpcd-6.8.2" />
+  <project path="external/dhcpcd-6.8.2" name="platform/external/dhcpcd-6.8.2" groups="notdefault" />
+  <project path="external/dhcpcd" name="platform/external/dhcpcd" groups="pdk-cw-fs,pdk-fs" revision="refs/tags/android-6.0.1_r61" />
   <project path="external/dlmalloc" name="platform/external/dlmalloc" />
   <project path="external/dng_sdk" name="platform/external/dng_sdk" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
