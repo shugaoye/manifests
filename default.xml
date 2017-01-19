@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="github"
-           revision="refs/tags/android-7.1.1_r4_x86emu_ch06_r1"
+           revision="refs/tags/android-x86-7.1.1_r4"
            fetch="." />
 
   <remote  name="aosp"
@@ -12,10 +12,46 @@
            sync-c="true"
            sync-j="1" />
 
-  <!-- github/shugaoye -->
-  <project path="kernel" name="goldfish" remote="github" />
-  <project path="device/generic/x86emu" name="x86emu" remote="github" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" />
+  <!-- github -->
+  <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-6.0.1_r61_x86vbox_ch12_r1" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="github" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch08" />
+  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch08" />
+  <project path="device/generic/firmware" name="device_generic_firmware" remote="github" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_r61_ch08" />
+  <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="github" />
+  <project path="external/alsa-utils" name="platform_external_alsa-utils" remote="github" />
+  <project path="external/bluetooth/bluez" name="platform_external_bluetooth_bluez" remote="github" />
+  <project path="external/bluetooth/glib" name="platform_external_bluetooth_glib" remote="github" />
+  <project path="external/bluetooth/sbc" name="platform_external_bluetooth_sbc" remote="github" />
+  <project path="external/busybox" name="platform_external_busybox" remote="github" />
+  <project path="external/drm_gralloc" name="platform_external_drm_gralloc" groups="drm_gralloc" remote="github" />
+  <project path="external/drm_hwcomposer" name="platform_external_drm_hwcomposer" groups="drm_hwcomposer" remote="github" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" groups="pdk" remote="github" />
+  <project path="external/ffmpeg" name="platform_external_ffmpeg" remote="github" />
+  <project path="external/libdrm" name="platform_external_libdrm" groups="pdk" remote="github" />
+  <project path="external/libtruezip" name="platform_external_libtruezip" remote="github" />
+  <project path="external/llvm" name="platform_external_llvm" groups="pdk" remote="github" />
+  <project path="external/mesa" name="platform_external_mesa" remote="github" />
+  <project path="external/s2tc" name="platform_external_s2tc" remote="github" />
+  <project path="external/stagefright-plugins" name="platform_external_stagefright-plugins" remote="github" />
+  <project path="external/v86d" name="platform_external_v86d" remote="github" />
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="github" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="android-7.1.1_r4_ch08" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github" />
+  <project path="hardware/broadcom/wlan" name="platform_hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="github" />
+  <project path="hardware/gps" name="platform_hardware_gps" remote="github" />
+  <project path="hardware/intel/audio_media" name="platform_hardware_intel_audio_media" groups="intel" remote="github" />
+  <project path="hardware/intel/libsensors" name="platform_hardware_intel_libsensors" remote="github" />
+  <project path="hardware/libaudio" name="platform_hardware_libaudio" remote="github" />
+  <project path="hardware/libcamera" name="platform_hardware_libcamera" remote="github" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" groups="pdk" remote="github" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" groups="pdk" remote="github" />
+  <project path="hardware/liblights" name="platform_hardware_liblights" remote="github" />
+  <project path="hardware/libsensors" name="platform_hardware_libsensors" remote="github" />
+  <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="github" />
+  <project path="hardware/x86power" name="platform_hardware_x86power" remote="github" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="github" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
@@ -42,7 +78,7 @@
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="notdefault,pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="notdefault,pdk" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+  <!--project path="device/generic/common" name="device/generic/common" groups="pdk" /-->
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
   <project path="device/generic/mips" name="device/generic/mips" groups="notdefault,pdk" />
@@ -121,10 +157,10 @@
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/donuts" name="platform/external/donuts" groups="pdk-fs" />
-  <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" />
-  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" />
+  <!--project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" />
+  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" /-->
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
+  <!--project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" /-->
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" />
@@ -195,7 +231,7 @@
   <project path="external/libcxx" name="platform/external/libcxx" groups="pdk" />
   <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="pdk" />
   <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="pdk" />
-  <project path="external/libdrm" name="platform/external/libdrm" groups="pdk" />
+  <!--project path="external/libdrm" name="platform/external/libdrm" groups="pdk" /-->
   <project path="external/libedit" name="platform/external/libedit" groups="pdk-fs" />
   <project path="external/libdaemon" name="platform/external/libdaemon" />
   <project path="external/libevent" name="platform/external/libevent" />
@@ -231,13 +267,13 @@
   <project path="external/libyuv" name="platform/external/libyuv" groups="libyuv,pdk-cw-fs,pdk-fs" />
   <project path="external/littlemock" name="platform/external/littlemock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lld" name="platform/external/lld" groups="pdk-fs" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
+  <!--project path="external/llvm" name="platform/external/llvm" groups="pdk" /-->
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lz4" name="platform/external/lz4" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
+  <!--project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" /-->
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/minijail" name="platform/external/minijail" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
@@ -324,8 +360,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" />
+  <!--project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
+  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" /-->
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -333,7 +369,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs,pdk-fs" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+  <!--project path="frameworks/native" name="platform/frameworks/native" groups="pdk" /-->
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" groups="pdk-fs" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs,pdk-fs" />
@@ -360,10 +396,10 @@
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
-  <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" />
+  <!--project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="pdk,broadcom_wlan" /-->
   <project path="hardware/bsp/intel" name="platform/hardware/bsp/intel" />
   <project path="hardware/google/apf" name="platform/hardware/google/apf" groups="pdk" />
-  <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
+  <!--project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" /-->
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
   <project path="hardware/intel/common/libmix" name="platform/hardware/intel/common/libmix" groups="intel" />
@@ -378,8 +414,8 @@
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
+  <!--project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" /-->
   <project path="hardware/marvell/bt" name="platform/hardware/marvell/bt" groups="marvell_bt" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio" />
   <project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="pdk" />
@@ -397,7 +433,7 @@
   <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
+  <!--project path="hardware/ril" name="platform/hardware/ril" groups="pdk" /-->
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
@@ -524,7 +560,7 @@
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
   <project path="system/connectivity/shill" name="platform/system/connectivity/shill" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
+  <!--project path="system/core" name="platform/system/core" groups="pdk" /-->
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/firewalld" name="platform/system/firewalld" />
   <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="pdk" />
