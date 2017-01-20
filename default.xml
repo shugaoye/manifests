@@ -14,11 +14,13 @@
 
   <!-- github -->
   <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-6.0.1_r61_x86vbox_ch12_r1" />
-  <project path="bionic" name="platform_bionic" groups="pdk" remote="github" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch08" />
   <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch08" />
-  <project path="device/generic/firmware" name="device_generic_firmware" remote="github" />
   <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_r61_ch08" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="android-7.1.1_r4_ch08" />
+
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="github" />
+  <project path="device/generic/firmware" name="device_generic_firmware" remote="github" />
   <project path="external/alsa-lib" name="platform_external_alsa-lib" remote="github" />
   <project path="external/alsa-utils" name="platform_external_alsa-utils" remote="github" />
   <project path="external/bluetooth/bluez" name="platform_external_bluetooth_bluez" remote="github" />
@@ -37,7 +39,6 @@
   <project path="external/stagefright-plugins" name="platform_external_stagefright-plugins" remote="github" />
   <project path="external/v86d" name="platform_external_v86d" remote="github" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="github" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="android-7.1.1_r4_ch08" />
   <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="github" />
   <project path="hardware/broadcom/wlan" name="platform_hardware_broadcom_wlan" groups="pdk,broadcom_wlan" remote="github" />
   <project path="hardware/gps" name="platform_hardware_gps" remote="github" />
@@ -65,7 +66,7 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
+  <!--project path="bionic" name="platform/bionic" groups="pdk" /-->
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
