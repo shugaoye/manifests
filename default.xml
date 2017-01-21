@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="x86"
-           fetch="../android-x86" />
+           fetch="http://scm.osdn.jp/gitroot/android-x86/" />
 
   <remote  name="github"
            revision="refs/tags/android-x86-7.1.1_r4"
