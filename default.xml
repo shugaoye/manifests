@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="x86"
+           fetch="../android-x86" />
+
   <remote  name="github"
            revision="refs/tags/android-x86-7.1.1_r4"
            fetch="." />
@@ -13,10 +16,10 @@
            sync-j="1" />
 
   <!-- github -->
-  <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-6.0.1_r61_x86vbox_ch12_r1" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-6.0.1_r61_ch08" />
-  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-6.0.1_r61_ch08" />
-  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-6.0.1_r61_ch08" />
+  <project path="kernel" name="goldfish" remote="github" revision="android-7.1.1_r4_ch08" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-7.1.1_r4_ch08" />
+  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-7.1.1_r4_ch08" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-7.1.1_r4_ch08" />
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="android-7.1.1_r4_ch08" />
 
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github" />
@@ -53,6 +56,8 @@
   <project path="hardware/ril" name="platform_hardware_ril" groups="pdk" remote="github" />
   <project path="hardware/x86power" name="platform_hardware_x86power" remote="github" />
   <project path="system/core" name="platform_system_core" groups="pdk" remote="github" />
+
+  <project path="system/bt" name="platform/system/bt" groups="pdk" remote="x86" revision="nougat-x86" />
 
   <!-- aosp -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
@@ -556,7 +561,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
-  <project path="system/bt" name="platform/system/bt" groups="pdk" />
+  <!-- project path="system/bt" name="platform/system/bt" groups="pdk" /-->
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" />
   <project path="system/connectivity/apmanager" name="platform/system/connectivity/apmanager" />
   <project path="system/connectivity/dhcp_client" name="platform/system/connectivity/dhcp_client" />
