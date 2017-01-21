@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="github"
-           revision="refs/tags/android-x86-7.1.1_r4"
+           revision="refs/tags/android-7.1.1_r4_x86vbox_ch08_r1"
            fetch="." />
 
   <remote  name="aosp"
@@ -12,12 +12,14 @@
            sync-c="true"
            sync-j="1" />
 
-  <!-- github -->
-  <project path="kernel" name="goldfish" remote="github" revision="android-7.1.1_r4_ch08" />
-  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" revision="android-7.1.1_r4_ch08" />
-  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-7.1.1_r4_ch08" />
-  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-7.1.1_r4_ch08" />
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" revision="android-7.1.1_r4_ch08" />
+  <!-- github/android-7.1.1_r4_ch08 -->
+  <project path="kernel" name="goldfish" remote="github" />
+  <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" />
+  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" groups="pdk" />
+
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" />
 
   <project path="bionic" name="platform_bionic" groups="pdk" remote="github" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="github" />
@@ -67,7 +69,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <!--project path="bionic" name="platform/bionic" groups="pdk" /-->
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
+  <!--project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" /-->
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" />
   <project path="developers/build" name="platform/developers/build" />
