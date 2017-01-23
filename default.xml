@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="github"
-           revision="refs/tags/android-7.1.1_r4_x86vbox_ch12_r1"
+           revision="refs/tags/android-7.1.1_r4_x86vbox_ch14_r1"
            fetch="." />
 
   <remote  name="aosp"
@@ -15,8 +15,8 @@
   <!-- github/android-7.1.1_r4_ch14 -->
   <project path="kernel" name="goldfish" remote="github" />
   <project path="bootable/newinstaller" name="platform_bootable_newinstaller" remote="github" />
-  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" revision="android-7.1.1_r4_ch14" />
-  <project path="device/generic/x86vbox" name="x86vbox" remote="github" revision="android-7.1.1_r4_ch14" />
+  <project path="device/generic/common" name="device_generic_common" groups="pdk" remote="github" />
+  <project path="device/generic/x86vbox" name="x86vbox" remote="github" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="github" groups="pdk" />
 
   <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="github" />
