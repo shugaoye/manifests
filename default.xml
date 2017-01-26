@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="github"
-           revision="refs/tags/android-6.0.1_r61_x86emu_ch07_r1"
+           revision="refs/tags/android-6.0.1_r74_x86emu_ch07_r1"
            fetch="." />
 
   <remote  name="aosp"
