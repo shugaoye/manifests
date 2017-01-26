@@ -6,7 +6,7 @@
            fetch="." />
 
   <remote  name="aosp"
-           fetch="../android" />
+           fetch="https://android.googlesource.com/" />
 
   <default revision="refs/tags/android-6.0.1_r74"
            remote="aosp"
