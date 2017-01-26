@@ -1,6 +1,6 @@
 ******************************************************************************
 # Android System Programming
- manifest for chapter 7
+ manifest for chapter 6
 
  Copyright (c) 2017 Roger Ye.  All rights reserved.
  Software License Agreement
@@ -14,10 +14,10 @@
  DAMAGES, FOR ANY REASON WHATSOEVER.
 
 ******************************************************************************
-Branch android-6.0.1_r74_ch07
+Branch android-6.0.1_r74_ch06
 This is a manifest to checkout source code from a local mirror.
-$ repo init -u {your own mirror}/github/manifests.git -b android-6.0.1_r74_ch07
+$ repo init -u {your own mirror}/github/manifests.git -b android-6.0.1_r74_ch06
 
 History:
-20170126 - Created branch android-6.0.1_r74_ch07.
+20170126 - Created branch android-6.0.1_r74_ch06.
 
