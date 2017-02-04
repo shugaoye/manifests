@@ -15,9 +15,9 @@
 
 ******************************************************************************
 Branch: android-7.1.1_r4_ch14
-Initializing repo using the below command from your local mirror
+This is a manifest to checkout source code for chapter 14
 
-$ repo init -u {path of your local mirror} -b android-7.1.1_r4_ch14
+$ repo init -u https://github.com/shugaoye/manifests.git -b android-7.1.1_r4_ch14_aosp
 
 Test images can be downloaded at:
 https://sourceforge.net/projects/android-system-programming/files/android-7/ch14/ch14.zip/download
