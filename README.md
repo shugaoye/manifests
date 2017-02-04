@@ -17,7 +17,7 @@
 Branch: android-7.1.1_r4_ch04
 This is a manifest to checkout source code for chapter 4
 
-$ repo init -u https://github.com/shugaoye/manifests.git -b android-7.1.1_r4_ch04_aosp
+$ repo init -u https://github.com/shugaoye/manifests.git -b android-7.1.1_r4_ch04_tuna
 
 Test images can be downloaded at:
 https://sourceforge.net/projects/android-system-programming/files/android-7/ch04/ch04.zip/download

@@ -5,7 +5,7 @@
            fetch="." />
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
+           fetch="https://aosp.tuna.tsinghua.edu.cn/" />
   <default revision="refs/tags/android-7.1.1_r4"
            remote="aosp"
            sync-c="true"
