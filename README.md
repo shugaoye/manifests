@@ -1,6 +1,6 @@
 ******************************************************************************
 # Android System Programming
- manifest for chapter 5
+ manifest for GMS integration
 
  Copyright (c) 2017 Roger Ye.  All rights reserved.
  Software License Agreement
@@ -14,14 +14,10 @@
  DAMAGES, FOR ANY REASON WHATSOEVER.
 
 ******************************************************************************
-Branch: android-7.1.1_r4_ch05
+Branch: android-7.1.1_r4_gms
 Initializing repo using the below command from your local mirror
 
-$ repo init -u {path of your local mirror} -b android-7.1.1_r4_ch05
-
-Test images can be downloaded at:
-https://sourceforge.net/projects/android-system-programming/files/android-7/ch05/ch05.zip/download
+$ repo init -u {path of your local mirror} -b android-7.1.1_r4_gms
 
 #History:
-20170114 - Baselined android-7.1.1_r4_x86emu_ch05_r1.
-20170114 - Created branch android-7.1.1_r4_ch05.
+20170204 - Created branch android-7.1.1_r4_gms.
