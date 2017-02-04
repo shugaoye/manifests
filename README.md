@@ -15,8 +15,8 @@
 
 ******************************************************************************
 Branch: android-7.1.1_r4_ch06
-Initializing repo using the below command from your local mirror
-$ repo init -u {path of your local mirror} -b android-7.1.1_r4_ch06
+This is a manifest to checkout source code for chapter 6
+$ repo init -u https://github.com/shugaoye/manifests.git -b android-6.0.1_r74_ch06_aosp
 
 Test images can be downloaded at:
 https://sourceforge.net/projects/android-system-programming/files/android-7/ch06/ch06.zip/download
