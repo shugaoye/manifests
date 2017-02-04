@@ -20,7 +20,7 @@ Initializing repo using the below command from your local mirror
 $ repo init -u {path of your local mirror} -b android-7.1.1_r4_ch14
 
 Test images can be downloaded at:
-https://sourceforge.net/projects/android-system-programming/files/android-7/ch06/ch06.zip/download
+https://sourceforge.net/projects/android-system-programming/files/android-7/ch14/ch14.zip/download
 
 #History:
 20170123 - Baselined refs/tags/android-7.1.1_r4_x86vbox_ch14_r1.
