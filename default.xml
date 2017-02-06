@@ -15,7 +15,7 @@
            sync-j="1" />
 
   <!-- Google Services -->
-  <project path="vendor/google/gms" name="a/bsp/vendor/google/PRIVATE/gms" remote="intel" revision="android/n/mr0/release/r2/N0l001216" />
+  <project path="vendor/google/gms" name="a/bsp/vendor/google/PRIVATE/gms" remote="intel" revision="android/n/mr0/release/r2/N0l001213" />
 
   <!-- github/shugaoye -->
   <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-7.1.1_r4_x86emu_ch05_r1" />
