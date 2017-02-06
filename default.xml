@@ -4,7 +4,7 @@
   <remote  name="github"
            fetch="." />
 
-  <remote  name="google"
+  <remote  name="intel"
            fetch="ssh://mygit/mnt/mirror/intel" />
 
   <remote  name="aosp"
@@ -15,7 +15,7 @@
            sync-j="1" />
 
   <!-- Google Services -->
-  <project name="a/bsp/vendor/google/PRIVATE/gms" path="vendor/google/gms" revision="android/n/mr0/release/r2/N0l001216" />
+  <project path="vendor/google/gms" name="a/bsp/vendor/google/PRIVATE/gms" remote="intel" revision="android/n/mr0/release/r2/N0l001216" />
 
   <!-- github/shugaoye -->
   <project path="kernel" name="goldfish" remote="github" revision="refs/tags/android-7.1.1_r4_x86emu_ch05_r1" />
