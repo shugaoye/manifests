@@ -21,14 +21,14 @@
   <!-- HTC HD2 kernel/device -->
   <project path="kernel/htc/leo" name="github/shugaoye/android_kernel_htcleo-3.0_older" />
   <project path="device/htc/leo" name="github/shugaoye/android_device_htc_leo" />
-  <project path="hardware/qcom/display-caf/qsd8k" name="shugaoye/android_hardware_qcom_display" remote="origin" revision="cm-12.1_leo" />
+  <project path="hardware/qcom/display-caf/qsd8k" name="shugaoye/android_hardware_qcom_display" revision="cm-12.1_leo" />
   <project path="hardware/qcom/media-caf/qsd8k" name="github/shugaoye/android_hardware_qcom_media" revision="cm-12.1-caf-qsd8k" />
   <project path="hardware/qcom/audio-caf/qsd8k" name="github/shugaoye/android_hardware_qcom_audio" revision="cm-12.1-caf-qsd8k" />
 
-  <project path="bootable/recovery-twrp" name="shugaoye/android_bootable_recovery" remote="origin" revision="android-5.1" groups="pdk" />
+  <project path="bootable/recovery-twrp" name="shugaoye/android_bootable_recovery" revision="android-5.1" groups="pdk" />
 
   <!-- aosp -->
-  <project path="build" name="shugaoye/android_build" remote="origin" revision="cm-12.1_leo" groups="pdk,tradefed" >
+  <project path="build" name="shugaoye/android_build" revision="cm-12.1_leo" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -344,7 +344,7 @@
   <project path="external/zlib" name="LineageOS/android_external_zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" />
-  <project path="frameworks/av" name="shugaoye/android_frameworks_av" remote="origin" revision="cm-12.1_leo" groups="pdk" />
+  <project path="frameworks/av" name="shugaoye/android_frameworks_av" revision="cm-12.1_leo" groups="pdk" />
   <project path="frameworks/base" name="LineageOS/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="LineageOS/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="LineageOS/android_frameworks_compile_mclinker" groups="pdk" />
@@ -354,7 +354,7 @@
   <project path="frameworks/minikin" name="LineageOS/android_frameworks_minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="LineageOS/android_frameworks_ml" />
   <project path="frameworks/multidex" name="LineageOS/android_frameworks_multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="shugaoye/android_frameworks_native" remote="origin" revision="cm-12.1_leo" groups="pdk" />
+  <project path="frameworks/native" name="shugaoye/android_frameworks_native" revision="cm-12.1_leo" groups="pdk" />
   <project path="frameworks/opt/bitmap" name="LineageOS/android_frameworks_opt_bitmap" />
   <project path="frameworks/opt/bluetooth" name="LineageOS/android_frameworks_opt_bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="LineageOS/android_frameworks_opt_calendar" />
