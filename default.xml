@@ -19,11 +19,11 @@
            sync-j="4" />
 
   <!-- HTC HD2 kernel/device -->
-  <project path="kernel/htc/leo" name="github/shugaoye/android_kernel_htcleo-3.0_older" />
-  <project path="device/htc/leo" name="github/shugaoye/android_device_htc_leo" />
+  <project path="kernel/htc/leo" name="shugaoye/android_kernel_htcleo-3.0_older" />
+  <project path="device/htc/leo" name="shugaoye/android_device_htc_leo" />
   <project path="hardware/qcom/display-caf/qsd8k" name="shugaoye/android_hardware_qcom_display" revision="cm-12.1_leo" />
-  <project path="hardware/qcom/media-caf/qsd8k" name="github/shugaoye/android_hardware_qcom_media" revision="cm-12.1-caf-qsd8k" />
-  <project path="hardware/qcom/audio-caf/qsd8k" name="github/shugaoye/android_hardware_qcom_audio" revision="cm-12.1-caf-qsd8k" />
+  <project path="hardware/qcom/media-caf/qsd8k" name="shugaoye/android_hardware_qcom_media" revision="cm-12.1-caf-qsd8k" />
+  <project path="hardware/qcom/audio-caf/qsd8k" name="shugaoye/android_hardware_qcom_audio" revision="cm-12.1-caf-qsd8k" />
 
   <project path="bootable/recovery-twrp" name="shugaoye/android_bootable_recovery" revision="android-5.1" groups="pdk" />
 
