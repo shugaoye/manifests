@@ -6,6 +6,7 @@ HTC HD2 Build
     branch: cm-12.1_leo
     repo init -u ssh://mygit/media/aosp-mirror/github/shugaoye/manifests -b cm-12.1_leo
 
+20170324: Changed kernel to android_kernel_htcleo-2.6.32.
 20170323: Changed to mygit.
 20170322: Build TWRP for device/htc/leo.
 20170321: Use GitHub for the changes.
