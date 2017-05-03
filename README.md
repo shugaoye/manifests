@@ -18,5 +18,6 @@
 This is a manifest to checkout source code for chapter 7
 $ repo init -u https://github.com/shugaoye/manifests.git -b android-7.1.1_r4_ch07_aosp
 
+20170503 - Created tag refs/tags/android-7.1.1_r4_x86emu_ch07_r2.
 20170119 - Baselined refs/tags/android-7.1.1_r4_x86emu_ch07_r1.
 
