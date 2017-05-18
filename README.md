@@ -20,4 +20,5 @@ This is a manifest to checkout source code for chapter 12
 $ repo init -u https://github.com/shugaoye/manifests.git -b android-7.1.1_r4_ch12_aosp
 
 #History:
+20170518 - Added mount.vboxsf.
 20170121 - Baselined refs/tags/android-7.1.1_r4_x86vbox_ch12_r1. Created branch android-7.1.1_r4_ch12 for bootable/newinstaller, bootable/recovery and device/generic/x86vbox.
