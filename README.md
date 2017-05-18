@@ -23,5 +23,6 @@ Test images can be downloaded at:
 https://sourceforge.net/projects/android-system-programming/files/android-7/ch14/ch14.zip/download
 
 #History:
+20170518 - Added mount.vboxsf.
 20170123 - Baselined refs/tags/android-7.1.1_r4_x86vbox_ch14_r1.
 20170122 - Created branch android-7.1.1_r4_ch14 for bootable/newinstaller, bootable/recovery, device/generic/common and device/generic/x86vbox.
