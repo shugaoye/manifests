@@ -5,7 +5,7 @@
            fetch="." />
 
   <remote  name="github"
-           fetch="../github" />
+           fetch="../github/shugaoye" />
 
   <default revision="refs/tags/fedora26_qemu-v1"
            remote="shugaoye"
