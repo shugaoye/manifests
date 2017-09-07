@@ -7,7 +7,7 @@
   <remote  name="github"
            fetch="../github/shugaoye" />
 
-  <default revision="refs/tags/fedora26_qemu-m-v1"
+  <default revision="refs/tags/fedora26_qemu-m-v2"
            remote="shugaoye"
            sync-c="true"
            sync-j="4" />
@@ -21,6 +21,6 @@
   <project path="src/virglrenderer" name="virglrenderer" />
 
   <!-- QEMU -->
-  <project path="src/qemu" name="qemu" remote="github" revision="refs/tags/fedora26_qemu-m-v1" />
+  <project path="src/qemu" name="qemu" remote="github" revision="refs/tags/fedora26_qemu-m-v2" />
 
 </manifest>
